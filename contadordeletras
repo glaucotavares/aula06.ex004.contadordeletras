@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de letras</title>
+</head>
+    <style>
+        body {
+            background-color: rgb(131, 8, 247);
+            font: normal 15pt Arial;
+            color: white;
+        }
+    </style>
+<body>
+    <fieldset><!--fielset serve para criar uma caixa ou borda no texto-->
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`<strong>${nome}</strong>, seu nome tem ${nome.length} letras. <br/>`)
+        document.write(`Em letras maiúsculas ele fica assim: ${nome.toLocaleUpperCase()} <br/>`)
+
+        // usar strong para negrito, usando o <br/> faz a proxima frase ser na linha de baixo
+        // usando toLocaleUpperCase para escrever tudo em maiúsculas
+
+        // var s = 'JavaScript'
+        // s.length         // quantos caracteres a string tem
+        // s.toUpperCase()  // tudo para MAIÚSCULAS
+        // s.toLowerCase()  // tudo para minúsculas
+
+        var salario = window.prompt('Qual é o seu salário ?')
+        document.write(`Seu salário é de <strong>R$${salario}</strong>`)
+
+        // var n1 = 1545.5
+        // n1.toFixed(2) 
+        // 1545.50          // tofixed vai cria 2 casas decimais
+
+        // n1.toFixed(2).replace('.',',')
+        // 1545,50          // replace vai trocar o ponto por virgula
+
+        // n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        // R$ 1545.50
+        
+        
+    </script>
+    </fieldset>
+</body>
+</html>
